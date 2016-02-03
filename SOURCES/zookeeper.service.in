@@ -1,0 +1,14 @@
+[Unit]
+Description=Apache Zookeeper
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking
+EnvironmentFile=/etc/sysconfig/zookeeper
+User=zookeeper
+ExecStart=@@PKG_ROOT@@/bin/zkServer.sh start
+ExecStop=@@PKG_ROOT@@/bin/zkServer.sh stop
+LimitNOFILE=10000
+
+[Install]
+WantedBy=multi-user.target

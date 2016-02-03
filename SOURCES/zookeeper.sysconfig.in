@@ -1,0 +1,8 @@
+# Set the JAVA_HOME
+#JAVA_HOME="/usr/lib/jvm/jre-1.8.0"
+
+# Set log dir
+ZOO_LOG_DIR=/cn/runtime/zookeeper/log
+
+# Java options
+SERVER_JVMFLAGS="-Xmx1g -Xms1g"
