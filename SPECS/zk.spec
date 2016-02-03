@@ -10,11 +10,11 @@
 Name:           %{org}-zookeeper
 Version:        %{ver}
 Release:        %{rel}
-Summary:        Apache Search Server
+Summary:        Apache Zookeeper
 Source:         zookeeper-%{version}.tar.gz
 Source1:        zookeeper.service.in
 Source2:        zookeeper.sysconfig.in
-URL:            http://lucene.apache.org/zookeeper/
+URL:            https://zookeeper.apache.org/
 Group:          Development/Tools/Building
 License:        Apache License, Version 2.0
 BuildRoot:      %{_tmppath}/build-%{name}-%{version}
